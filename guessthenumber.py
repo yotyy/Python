@@ -1,15 +1,18 @@
 import random
-import sys
 
 def guessthenumber(min, max):
-    answer=generateNum
+    answer=generateNum(min,max)
 
-    while(int: guess==answer):
-        guess = input("Guess the Number\n")
+    #initialize the guess
+    guess=None
+    while guess!=answer:
+        guess = int(input("Guess the Number\n"))
+        if guess!=answer:
+            print("Try again!")
 
-    print("You're correct the answer is " + guess).
+    print(f"You're correct the answer is {guess}")
 
 def generateNum(min, max):
     return random.randint(min, max)
 
-    
+guessthenumber(1,10)
